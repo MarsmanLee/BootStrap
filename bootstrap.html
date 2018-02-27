@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <title>首页</title>
+    <style>
+        span {
+            width: 18px;
+            height: 18px;
+            background: #dd2323;
+            display: block;
+            text-align: center;
+            line-height: 18px;
+            font-size: 12px;
+            color: #ffffff;
+            letter-spacing: 0;
+            margin: 100px auto;
+            border-radius: 100%;
+            border-bottom-left-radius: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <span>3</span>
+
+    <div class="jumbotron text-center">
+        <h1>我的第一个 Bootstrap 页面</h1>
+        <p>重置浏览器大小查看效果!</p>
+    </div>
+
+
+    <h5 class="jumbotron text-center">.container 类用于固定宽度并支持响应式布局的容器。</h5>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>第一列</h3>
+                <p>菜鸟教程</p>
+                <p>学的不仅是技术，更是梦想！！！</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>第二列</h3>
+                <p>菜鸟教程..</p>
+                <p>学的不仅是技术，更是梦想！！！</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>第三列</h3>
+                <p>菜鸟教程..</p>
+                <p>学的不仅是技术，更是梦想！！！</p>
+            </div>
+        </div>
+    </div>
+
+    <h5 class="jumbotron text-center">.container-fluid 类用于 100% 宽度，占据全部视口（viewport）的容器。</h5>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>第一列</h3>
+                <p>菜鸟教程</p>
+                <p>学的不仅是技术，更是梦想！！！</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>第二列</h3>
+                <p>菜鸟教程..</p>
+                <p>学的不仅是技术，更是梦想！！！</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>第三列</h3>
+                <p>菜鸟教程..</p>
+                <p>学的不仅是技术，更是梦想！！！</p>
+            </div>
+        </div>
+    </div>
+
+    <h5 class="jumbotron text-center">不在每个 col 上添加数字，让 bootstrap 自动处理布局，同一行的每个列宽度相等： 两个 "col" ，每个就为 50% 的宽度。三个 "col"每个就为 33.33% 的宽度，四个 "col"每个就为 25% 的宽度，以此类推。同样，你可以使用 .col-sm|md|lg|xl 来设置列的响应规则。</h5>
+    <div class="row">
+        <div class="col">平均等分</div>
+        <div class="col">平均等分</div>
+        <div class="col">平均等分</div>
+        <div class="col">平均等分</div>
+        <div class="col">平均等分</div>
+        <div class="col">平均等分</div>
+    </div>
+
+    <h5 class="jumbotron text-center">创建一行(&lt; div class="row" &gt;)。然后， 添加是需要的列( .col-*-* 类中设置)。 第一个星号 (*) 表示响应的设备: sm, md, lg 或 xl, 第二个星号 (*) 表示一个数字, 同一行的数字相加为 12。</h5>
+    <div class="row">
+        <div class="col-sm-3">平均等分</div>
+        <div class="col-sm-3">平均等分</div>
+        <div class="col-sm-3">平均等分</div>
+        <div class="col-sm-3">平均等分</div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4">.col-sm-4</div>
+        <div class="col-sm-8">.col-sm-8</div>
+    </div>
+    
+    <div class="container">
+        <h1>Display 标题</h1>
+        <p>Display 标题可以输出更大更粗的字体样式。</p>
+        <h1 class="display-1">Display 1</h1>
+        <h1 class="display-2">Display 2</h1>
+        <h1 class="display-3">Display 3</h1>
+        <h1 class="display-4">Display 4</h1>
+    </div>
+
+    <div class="container">
+        <h1>更小文本标题</h1>
+        <p>small 元素用于字号更小的颜色更浅的文本:</p>       
+        <h1>h1 标题 <small>副标题</small></h1>
+        <h2>h2 标题 <small>副标题</small></h2>
+        <h3>h3 标题 <small>副标题</small></h3>
+        <h4>h4 标题 <small>副标题</small></h4>
+        <h5>h5 标题 <small>副标题</small></h5>
+        <h6>h6 标题 <small>副标题</small></h6>
+    </div>
+
+    <div class="container">
+        <h1>高亮文本</h1>    
+        <p>使用 mark 元素来 <mark>高亮</mark> 文本。</p>
+    </div>
+
+    <div class="container">
+        <h1>Abbreviations</h1>
+        <p>The abbr element is used to mark up an abbreviation or acronym:</p>
+        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+        <abbr title="World Wide Web">WWW</abbr><br>
+        <abbr title="Real Simple Syndication" class="initialism">RSS</abbr>
+    </div>
+
+
+    <div class="container">
+        <h1>Blockquotes</h1>
+        <p>The blockquote element is used to present content from another source:</p>
+        <blockquote class="blockquote">
+          <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+          <footer class="blockquote-footer">From WWF's website</footer>
+        </blockquote>
+    </div>
+
+    <div class="container">
+        <h1>Description Lists</h1>    
+        <p>The dl element indicates a description list:</p>
+        <dl>
+            <dt>Coffee</dt>
+            <dd>- black hot drink</dd>
+            <dd>- black hot drink</dd>
+            <dd>- black hot drink</dd>
+            <dd>- black hot drink</dd>
+            <dd>- black hot drink</dd>            
+            <dt>Milk</dt>
+            <dd>- white cold drink</dd>
+            <dd>- white cold drink</dd>
+            <dd>- white cold drink</dd>
+            <dd>- white cold drink</dd>
+            <dd>- white cold drink</dd>            
+        </dl>     
+    </div>
+
+    <div class="container">
+        <h1>代码片段</h1>
+        <p>可以将一些代码元素放到 code 元素里面:</p>
+        <p>以下 HTML 元素: <code>span</code>, <code>section</code>, 和 <code>div</code> 用于定义部分文档内容。</p>
+    </div>
+
+    <div class="container">
+        <h1>Keyboard Inputs</h1>
+        <p>To indicate input that is typically entered via the keyboard, use the kbd element:</p>
+        <p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p>
+    </div>
+
+    <div class="container">
+        <h1>Multiple Code Lines</h1>
+        <p>For multiple lines of code, use the pre element:</p>
+        <pre>
+        Text in a pre element
+        is displayed in a fixed-width
+        font, and it preserves
+        both      spaces and
+        line breaks.
+        </pre>
+    </div>
+
+    <div class="container">
+        <h2>排版</h2>
+        <p class="text-left">左对齐</p>
+        <p class="text-right">右对齐</p>      
+        <p class="text-center">居中对齐文本</p>
+        <p class="text-justify">设定文本对齐,段落中超出屏幕部分文字自动换行</p>      
+        <p class="text-nowrap">段落中超出屏幕部分不换行</p>
+        <p><strong>提示:</strong> 重置浏览器窗口大小查看换行效果。</p>      
+    </div>
+
+    <div class="container">
+        <h2>排版</h2>
+        <p class="text-lowercase">Lowercased text.</p>
+        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948. (normal abbr)</p>      
+        <p>The <abbr title="World Health Organization" class="initialism">WHO</abbr> was founded in 1948. (slightly smaller abbr)</p>
+        <p>The <abbr title="World Health Organization" class="initialism">who</abbr> was founded in 1948. (slightly smaller abbr)</p>        
+    </div>
+
+    <div class="container">
+        <h2>排版</h2>
+        <p>The class .list-inline places all list items on a single line, when used together with the .list-inline-item:</p>
+        <ul class="list-inline">
+            <li class="list-inline-item">123</li>
+            <li class="list-inline-item">456</li>
+            <li class="list-inline-item">789</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>字体样式汇总</h2>
+        <p class="font-weight-bold">加粗字体</p>
+        <p class="font-weight-normal">正常字体</p>
+        <p class="font-weight-light">更细的文本</p>
+        <p class="font-italic">斜体字</p>
+        <p class="lead">让段落更加突出</p>
+        <p class="small">指定更小文本(为父元素的85%)</p>
+        <p class="text-left">文字左对齐</p>
+        <p class="text-center">文字居中对齐</p>
+        <p class="text-right">文字右对齐</p>
+        <p class="text-justify">设定文本对齐,段落中超出屏幕部分文字自动换行</p>      
+        <p class="text-nowrap">段落中超出屏幕部分不换行</p>
+        <p class="text-lowercase">LEVI转换成小写</p>
+        <p class="text-uppercase">levi转换成大写</p>
+        <p class="text-capitalize">levi首字母大写</p>
+        <ul class="list-unstyled">
+            <li>苹果
+                <ul>
+                    <li>手机</li>
+                    <li>吃的</li>
+                </ul>
+            </li>
+            <li>香蕉
+                <ul class="list-unstyled">
+                    <li>进口的</li>
+                    <li>国产的</li>
+                </ul>
+            </li>
+            <li>橘子</li>
+            <li>西瓜</li>
+        </ul>
+
+        <ul class="list-inline">
+            <li class="list-inline-item">123</li>
+            <li class="list-inline-item">456</li>
+            <li class="list-inline-item">789</li>            
+        </ul>
+
+        <pre class="pre-scrollable">
+                    .
+                    .
+                    .
+                    .
+                    .
+                    .
+                    .
+                    .
+                    .
+                    .
+                    .                    .
+                    .
+                    .
+                    .
+                    .
+                    .
+                    .
+            .pre-scrollable	
+            使 &lt;pre&gt; 
+            元素可滚动,
+            代码块区域最大高度为340px,
+            一旦超出这个高度,
+            就会在Y轴出现滚动条
+        </pre>
+    </div>
+
+    <!-- 颜色 -->
+    <div class="container">
+        <h2>Bootstrap4 颜色</h2>
+        <h4>文本颜色</h4>
+        <p class="text-muted">柔和的文本</p>
+        <p class="text-primary">重要的文本 蓝色</p>
+        <p class="text-success">执行成功的文本 绿色</p>
+        <p class="text-info">代表一些提示信息的文本 浅蓝色</p>
+        <p class="text-warning">警告文本 黄色</p>
+        <p class="text-danger">危险操作的文本 红色</p>
+        <p class="text-secondary">副标题 浅灰色</p>
+        <p class="text-dark">深灰色的文本 深灰色</p>
+        <div style="background:#000">
+            <p class="text-light">浅灰色的文本 浅灰色</p>
+            <p class="text-white">白色的文本 白色</p>
+        </div>
+
+        <h4>链接文本颜色</h4>
+        <a href="#" class="text-muted">柔和的链接。</a>
+        <a href="#" class="text-primary">主要链接。</a>
+        <a href="#" class="text-success">成功链接。</a>
+        <a href="#" class="text-info">信息文本链接。</a>
+        <a href="#" class="text-warning">警告链接。</a>
+        <a href="#" class="text-danger">危险链接。</a>
+        <a href="#" class="text-secondary">副标题链接。</a>
+        <a href="#" class="text-dark">深灰色链接。</a>
+        <a href="#" class="text-light">浅灰色链接。</a>
+
+        <h4>背景颜色</h4>
+        <p class="bg-primary text-white">重要的背景颜色。</p>
+        <p class="bg-success text-white">执行成功背景颜色。</p>
+        <p class="bg-info text-white">信息提示背景颜色。</p>
+        <p class="bg-warning text-white">警告背景颜色</p>
+        <p class="bg-danger text-white">危险背景颜色。</p>
+        <p class="bg-secondary text-white">副标题背景颜色。</p>
+        <p class="bg-dark text-white">深灰背景颜色。</p>
+        <p class="bg-light text-dark">浅灰背景颜色。</p>
+    </div>
+
+    <!-- 表格 -->
+    <div class="container">
+        <h2>Bootstrap4 表格</h2>
+        <h4>基础表格</h4>
+        <p>通过添加 <code>.table</code>类，就可以生成一个基础表格</p>
+        <table class="table">
+            <thead>
+                <tr class="text-center">
+                    <th>栏目1</th>
+                    <th>栏目2</th>
+                    <th>栏目3</th>
+                    <th>栏目4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-center">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr class="text-center">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4>条纹表格</h4>
+        <p>通过添加 <code>.table-striped</code>类，就可以在表格内的行上看到条纹</p>
+        <table class="table table-striped">
+            <thead>
+                <tr class="text-center">
+                    <th>栏目1</th>
+                    <th>栏目2</th>
+                    <th>栏目3</th>
+                    <th>栏目4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-center">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr class="text-center">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr class="text-center">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr class="text-center">
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+            </tbody>
+        </table>
+
+        <h4>带边框表格</h4>
+        <p>通过添加 <code>.table-bordered</code>类，就可以生成一个带边框的表格</p>
+        <table class="table table-bordered">
+            <thead>
+                <tr class="text-center">
+                    <th>栏目1</th>
+                    <th>栏目2</th>
+                    <th>栏目3</th>
+                    <th>栏目4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-center">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr class="text-center">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr class="text-center">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr class="text-center">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4>鼠标悬停状态表格</h4>
+        <p>通过添加 <code>.table-hover</code>类，鼠标悬停时,背景呈灰色效果</p>
+        <table class="table table-hover">
+            <thead>
+                <tr class="text-center">
+                    <th>栏目1</th>
+                    <th>栏目2</th>
+                    <th>栏目3</th>
+                    <th>栏目4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-center">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr class="text-center">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr class="text-center">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr class="text-center">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4>黑色背景表格</h4>
+        <p>通过添加 <code>.table-dark</code>类，表格背景呈黑色</p>
+        <table class="table table-dark">
+            <thead>
+                <tr class="text-center">
+                    <th>栏目1</th>
+                    <th>栏目2</th>
+                    <th>栏目3</th>
+                    <th>栏目4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-center">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr class="text-center">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr class="text-center">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr class="text-center">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4>黑色条纹表格</h4>
+        <p>通过添加 <code>.table-dark</code>和<code>.table-striped</code>类，创建黑色背景的条纹表格</p>
+        <table class="table table-dark table-striped">
+            <thead>
+                <tr class="text-center">
+                    <th>栏目1</th>
+                    <th>栏目2</th>
+                    <th>栏目3</th>
+                    <th>栏目4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-center">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr class="text-center">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr class="text-center">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr class="text-center">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4>鼠标悬停效果-黑色背景表格</h4>
+        <p>通过添加 <code>.table-dark</code>和<code>.table-striped</code>类，创建黑色背景的条纹表格</p>
+        <table class="table table-dark table-hover">
+            <thead>
+                <tr class="text-center">
+                    <th>栏目1</th>
+                    <th>栏目2</th>
+                    <th>栏目3</th>
+                    <th>栏目4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-center">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr class="text-center">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr class="text-center">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr class="text-center">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4>指定意义的颜色类</h4>
+        <p>通过指定意义的颜色类可以为表格的行或者单元格设置颜色</p>
+        <table class="table">
+            <thead>
+                <tr class="text-center">
+                    <th>栏目1</th>
+                    <th>栏目2</th>
+                    <th>栏目3</th>
+                    <th>栏目4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-center table-primary">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr class="text-center table-success">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr class="text-center table-danger">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr class="text-center table-info">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr class="text-center table-warning">
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                </tr>
+                <tr class="text-center table-active">
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                </tr>
+                <tr class="text-center table-secondary">
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                </tr>
+                <tr class="text-center table-light">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr class="text-center table-dark text-dark">
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4>表格颜色说明</h4>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr class="text-center">
+                    <th>类名</th>
+                    <th>描述</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="text-center">
+                    <td>.table-primary</td>
+                    <td>蓝色: 指定这是一个重要的操作</td>                    
+                </tr>
+                <tr class="text-center">
+                    <td>.table-success</td>
+                    <td>绿色: 指定这是一个允许执行的操作</td>                    
+                </tr>
+                <tr class="text-center">
+                    <td>.table-danger</td>
+                    <td>红色: 指定这是可以危险的操作</td>                    
+                </tr>
+                <tr class="text-center">
+                    <td>.table-info</td>
+                    <td>浅蓝色: 表示内容已变更</td>                    
+                </tr>
+                <tr class="text-center">
+                    <td>.table-warning</td>
+                    <td>橘色: 表示需要注意的操作</td>                    
+                </tr>
+                <tr class="text-center">
+                    <td>.table-active</td>
+                    <td>灰色: 用于鼠标悬停效果</td>                    
+                </tr>
+                <tr class="text-center">
+                    <td>.table-secondary</td>
+                    <td>灰色: 表示内容不怎么重要</td>                    
+                </tr>
+                <tr class="text-center">
+                    <td>.table-light</td>
+                    <td>浅灰色，可以是表格行的背景</td>                    
+                </tr>
+                <tr class="text-center">
+                    <td>.table-dark</td>
+                    <td>深灰色，可以是表格行的背景</td>                    
+                </tr> 
+            </tbody>
+        </table>
+
+        <h4>表头背景</h4>
+        <p>在 Bootstrap v4.0.0-beta.2 <code>.thead-dark</code> 类用于给表头添加<kbd>黑色</kbd>背景， <code>.thead-light</code>类用于给表头添加<kbd>灰色</kbd>背景:</p>
+        <p>在 Bootstrap v4.0.0-beta 这个版本中，<code> .thead-inverse </code> 类用于给表头添加<kbd>黑色</kbd>背景，<code> .thead-default </code>类用于给表头添加<kbd>灰色</kbd>背景。</p>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th>姓名</th>
+                    <th>年龄</th>
+                    <th>联系方式</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>张三</td>
+                    <td>18</td>
+                    <td>13888888888</td>
+                </tr>
+                <tr>
+                    <td>李四</td>
+                    <td>18</td>
+                    <td>13888888888</td>
+                </tr>
+                <tr>
+                    <td>王五</td>
+                    <td>18</td>
+                    <td>13888888888</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th>姓名</th>
+                    <th>年龄</th>
+                    <th>联系方式</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>张三</td>
+                    <td>18</td>
+                    <td>13888888888</td>
+                </tr>
+                <tr>
+                    <td>李四</td>
+                    <td>18</td>
+                    <td>13888888888</td>
+                </tr>
+                <tr>
+                    <td>王五</td>
+                    <td>18</td>
+                    <td>13888888888</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4>较小的表格</h4>
+        <p><code> .table-sm </code>类用于通过减少内边距(上下间距)来设置 <kbd> 较小</kbd>的表格:</p>
+        <table class="table table-bordered table-sm">
+            <thead class="thead-light">
+                <tr>
+                    <th>姓名</th>
+                    <th>年龄</th>
+                    <th>联系方式</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>张三</td>
+                    <td>18</td>
+                    <td>13888888888</td>
+                </tr>
+                <tr>
+                    <td>李四</td>
+                    <td>18</td>
+                    <td>13888888888</td>
+                </tr>
+                <tr>
+                    <td>王五</td>
+                    <td>18</td>
+                    <td>13888888888</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4>响应式表格</h4>
+        <p><code>.table-responsive </code>类用于创建<kbd>响应式表格</kbd>：在屏幕宽度小于<code>992px</code>时会创建水平滚动条，如果可视区域宽度大于<code>992px</code> 则显示不同效果（没有滚动条）:</p>
+        <div class="table-responsive">
+            <table class="table">
+                <thead class="thead-light">
+                    <tr>
+                        <th>姓名</th>
+                        <th>年龄</th>
+                        <th>联系方式</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>张三</td>
+                        <td>18</td>
+                        <td>138888888888888888888888888888888</td>
+                    </tr>
+                    <tr>
+                        <td>李四</td>
+                        <td>18</td>
+                        <td>1388888888888888888888888888888888</td>
+                    </tr>
+                    <tr>
+                        <td>王五</td>
+                        <td>18</td>
+                        <td>1388888888888888888888888888888888</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p><kbd>指定宽度</kbd>下显示表格滚动条:</p>
+        <table class="table table-sm table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>类名</th>
+                    <th>屏幕宽度</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>.table-responsive-sm</code></td>
+                    <td><code> &lt; 576px</code></td>
+                </tr>
+                <tr>
+                    <td><code>.table-responsive-md</code></td>
+                    <td><code>&lt; 768px</code></td>
+                </tr>
+                <tr>
+                    <td><code>.table-responsive-lg</code></td>
+                    <td><code>&lt; 992px</code></td>
+                </tr>
+                <tr>
+                    <td><code>.table-responsive-xl</code></td>
+                    <td><code>&lt; 1200px</code></td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </div>
+
+    <!-- 图片形状 -->
+    <div class="container">
+        <h2>Bootstrap4 图像形状</h2>
+        <!-- 圆角图片 -->
+        <h4>圆角图片</h4>
+        <p><code>.rounded</code> 类可以让图片显示圆角效果：</p>
+        <img src="http://ww2.sinaimg.cn/large/0060lm7Tly1fouzjtvoidj30840bw0su.jpg" class="rounded" alt="" style="width:100px">
+
+        <!-- 椭圆图片 -->
+        <h4>椭圆图片</h4>
+        <p><code>.rounded-circle</code>  类可以设置椭圆形图片:</p>
+        <img src="http://ww3.sinaimg.cn/large/0060lm7Tly1fouzjtrl54j308c08cdfv.jpg" class="rounded-circle" alt="" style="width:100px">
+        <img src="http://ww2.sinaimg.cn/large/0060lm7Tly1fouzjtvoidj30840bw0su.jpg" class="rounded-circle" alt="" style="width:100px">
+        
+        <!-- 缩略图 -->
+        <h4>缩略图</h4>
+        <p><code>.img-thumbnail</code> 类用于设置图片缩略图(图片有边框):</p>
+        <img src="http://ww2.sinaimg.cn/large/0060lm7Tly1fouzjtvoidj30840bw0su.jpg" class="img-thumbnail" alt="" style="width:100px">
+    
+        <!-- 对齐方式 -->
+        <h4>图片对齐方式</h4>
+        <p>使用 <code>.float-right </code>类来设置图片<kbd>右对齐</kbd>，使用 <code>.float-left</code> 类设置图片<kbd>左对齐</kbd>,左右浮动</p>
+        <div style="overflow:hidden;">
+            <img src="http://ww2.sinaimg.cn/large/0060lm7Tly1fouzjtvoidj30840bw0su.jpg" class="float-left" alt="" style="width:100px">
+            <img src="http://ww2.sinaimg.cn/large/0060lm7Tly1fouzjtvoidj30840bw0su.jpg" class="float-right" alt="" style="width:100px">
+        </div>
+
+        <!-- 响应图片 -->
+        <h4>响应式图片</h4>
+        <p>图像有各种各样的尺寸，我们需要根据屏幕的大小自动适应。</p> 
+        <p>我们可以通过在 <code>&lt;img&gt;</code> 标签中添加 <code>.img-fluid</code> 类来设置响应式图片。()</p> 
+        <p><code>.img-fluid </code>类设置了<code> max-width: 100%;</code> 、<code>height: auto;</code>:</p>
+        <img src="http://ww2.sinaimg.cn/large/0060lm7Tly1fouzjtvoidj30840bw0su.jpg" class="img-fluid" alt="">
+    </div>
+    <br>
+    <br>
+
+    <!-- Jumbotron 超大屏幕 -->
+    <div class="container">
+        <h2>Bootstrap4 Jumbotron</h2>
+        <p><code>Jumbotron（超大屏幕）</code>会创建一个大的灰色背景框，里面可以设置一些特殊的内容和信息。</p>
+        <p><strong>提示: </strong><code>Jumbotron</code> 里头可以放一些 HTML标签，也可以是 <code>Bootstrap</code>  的元素。</p>
+        <p>我们可以通过在 <code>&lt;div&gt;</code>元素 中添加<code>.jumbotron</code>类来创建<code>jumbotron</code>:</p>
+        <div class="jumbotron">
+            <h3>Hi,Levi</h3>
+            <p>现在你会创建Jumbotron了吗?</p>
+        </div>
+
+
+        <h4>全屏幕的 Jumbotron</h4>
+        <p>如果你想创建一个没有圆角的全屏幕，可以在 <code>.jumbotron-fluid </code>类里头的 <code>div</code>添加<code>.container</code> 或 <code>.container-fluid</code> 类来实现:</p>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h3>Hi,Levi</h3>
+                <p>现在你会创建Jumbotron了吗?</p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <!-- 信息提示框 -->
+    <div class="container">
+        <h2>Bootstrap4 信息提示框</h2>
+        <!-- 各种提示框 -->
+        <div class="container">
+            <h4>提示框</h4>
+            <p>提示框可以使用 <code>.alert </code>类, 后面加上 <code>.alert-success</code>,<code>.alert-info</code> ,<code>.alert-warning</code> , <code>.alert-danger</code>, <code>.alert-primary</code>, <code>.alert-secondary</code>,  <code>.alert-light</code>或 <code>.alert-dark</code> 类来实现:</p> 
+            
+            <div class="alert alert-success">
+                <strong>成功!</strong> 指定操作成功提示信息。(<code>.alert-success</code>)
+            </div>
+            
+            <div class="alert alert-info">
+                <strong>信息!</strong> 请注意这个信息。(<code>.alert-info</code>)
+            </div>
+            
+            <div class="alert alert-warning">
+                <strong>警告!</strong> 设置警告信息。(<code>.alert-warning</code>)
+            </div>
+            
+            <div class="alert alert-danger">
+                <strong>错误!</strong> 失败的操作danger。(<code>.alert-danger</code>)
+            </div>
+            
+            <div class="alert alert-primary">
+                <strong>首选!</strong> 这是一个重要的信息。(<code>.alert-primary</code>)
+            </div>
+            
+            <div class="alert alert-secondary">
+                <strong>次要的!</strong> 显示一些不重要的信息。(<code>.alert-secondary</code>)
+            </div>
+            
+            <div class="alert alert-light">
+                <strong>浅灰色!</strong> 浅灰色提示框。(<code>.alert-light</code>)
+            </div>
+            
+            <div class="alert alert-dark">
+                <strong>深灰色!</strong> 深灰色提示框。(<code>.alert-dark</code>)
+            </div>
+        </div>
+
+        <!-- 带链接的提示框 -->
+        <h4>提示框添加链接</h4>
+        <p>提示框中在链接的标签上添加 <code>alert-link</code> 类来设置匹配提示框颜色的链接：</p>
+        <div class="alert alert-success">
+            <strong>成功!</strong> 你应该认真阅读 <a href="#" class="alert-link">这条信息</a>。
+        </div>
+
+        <!-- 关闭提示框 -->
+        <h4>关闭提示框</h4>
+        <p>在提示框<code>div</code>中添加<code>.alert-dismissable</code>类,然后在关闭按钮上添加<code>class="close"</code>类,和自定义类<code>data-dismiss = "alert"</code>类,来设置提示框的关闭操作</p>
+        <div class="alert alert-success alert-dismissable">
+            <button class="close" data-dismiss="alert">&times;</button>
+            <strong>成功!</strong> 你应该认真阅读。
+        </div>
+    
+        <!-- 提示框动画 -->
+        <h4>提示框动画</h4>
+        <p><code>.fade 和 .show </code>类用于设置提示框在关闭时的<kbd>淡出和淡入</kbd>效果：</p>
+        <div class="alert alert-success alert-dismissable fade show">
+            <button class="close" data-dismiss="alert">&times;</button>
+            <strong>成功!</strong> 你应该认真阅读。
+        </div>
+        <div class="alert alert-warning alert-dismissable fade show">
+            <button class="close" data-dismiss="alert">&times;</button>
+            <strong>警告!</strong> 你应该注意。
+        </div>
+        <div class="alert alert-danger alert-dismissable fade show">
+            <button class="close" data-dismiss="alert">&times;</button>
+            <strong>错误!</strong> 失败的操作。
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <!-- 按钮 -->
+    <div class="container">
+        <h2>Bootstrap4 按钮</h2>
+        <h4>按钮样式</h4>
+        <p>按钮类可用于a,input,button元素上,只需要添加类<code>btn + btn-****</code>类</p>
+        <button type="button" class="btn">基本按钮 btn</button>
+        <button type="button" class="btn btn-primary">主要按钮 btn-primary</button>
+        <button type="button" class="btn btn-secondary">次要按钮 btn-secondary</button>
+        <button type="button" class="btn btn-success">成功 btn-success</button>
+        <button type="button" class="btn btn-info">信息 btn-info</button>
+        <button type="button" class="btn btn-warning">警告 btn-warning</button>
+        <button type="button" class="btn btn-danger">危险 btn-danger</button>
+        <button type="button" class="btn btn-dark">黑色 btn-dark</button>
+        <button type="button" class="btn btn-light">浅色 btn-light</button>
+        <button type="button" class="btn btn-link">链接 btn-link</button>     
+        <!-- a input button -->
+        <a href="#" class="btn btn-info" role="button">a链接按钮</a>
+        <button type="button" class="btn btn-info">button按钮</button>
+        <input type="button" class="btn btn-info" value="input输入框按钮">
+        <input type="submit" class="btn btn-info" value="submit提交按钮"> 
+    
+        <h4>按钮设置边框</h4>
+        <p>可以通过给按钮添加<code>btn-outline-***</code>来设置按钮的边,其中<code>***</code>表示的是按钮属性</p>
+        <button type="button" class="btn btn-outline-primary">主要按钮 primary</button>
+        <button type="button" class="btn btn-outline-secondary">次要按钮 secondary</button>
+        <button type="button" class="btn btn-outline-success">成功 success</button>
+        <button type="button" class="btn btn-outline-info">信息 info</button>
+        <button type="button" class="btn btn-outline-warning">警告 warning</button>
+        <button type="button" class="btn btn-outline-danger">危险 danger</button>
+        <button type="button" class="btn btn-outline-dark">黑色 dark</button>
+        <button type="button" class="btn btn-outline-light text-dark">浅色 light</button>
+    </div>
+</body>
+
+</html>
